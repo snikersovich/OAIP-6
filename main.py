@@ -7,8 +7,8 @@ def bubble_sort(list1):
     return list1
 
 list1 = [5, 3, 8, 6, 7, 2]
-print("The unsorted list is: ", list1)
-print("The sorted list is: ", bubble_sort(list1))
+print(list1)
+print(bubble_sort(list1))
 
 #Сортировка вставками
 def insertion_sort(alist):
@@ -20,10 +20,10 @@ def insertion_sort(alist):
             j = j - 1
         alist[j + 1] = temp
 
-alist = input('Enter the list of numbers: ').split()
+alist = input('Введите список номеров: ').split()
 alist = [int(x) for x in alist]
 insertion_sort(alist)
-print('Sorted list: ', end='')
+print('Сортированный список: ', end='')
 print(alist)
 
 #Сортировка слиянием
@@ -87,8 +87,8 @@ def partition(alist, start, end):
             alist[start], alist[j] = alist[j], alist[start]
             return j
 
-alist = input('Enter the list of numbers: ').split()
+alist = input('Введите списое номеров: ').split()
 alist = [int(x) for x in alist]
 quicksort(alist, 0, len(alist))
-print('Sorted list: ', end='')
+print('Сортированный список: ', end='')
 print(alist)
